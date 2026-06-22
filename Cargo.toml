@@ -64,7 +64,7 @@ num-format = "0.4.4"
 # old_sled = { version = "0.34", package = "sled" }
 rand = "0.9.1"
 quickcheck = "1.0.3"
-rand_distr = "0.5"
+rand_distr = "0.6"
 libc = "0.2.147"
 hdrhistogram = "7.5"
 serde_json = "1.0"
