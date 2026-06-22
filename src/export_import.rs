@@ -27,10 +27,10 @@ impl<const LEAF_FANOUT: usize> Tree<LEAF_FANOUT> {
                 key: BASE64.encode(key.as_ref()),
                 value: BASE64.encode(value.as_ref()),
             };
-            let line = serde_json::to_string(&record).map_err(|e| {
+            serde_json::to_writer(&mut writer, &record).map_err(|e| {
                 std::io::Error::new(std::io::ErrorKind::InvalidData, e)
             })?;
-            writeln!(writer, "{}", line)?;
+            writer.write_all(b"\n")?;
             count += 1;
         }
 
