@@ -67,6 +67,7 @@ quickcheck = "1.0.3"
 rand_distr = "0.5"
 libc = "0.2.147"
 hdrhistogram = "7.5"
+serde_json = "1.0"
 
 [[test]]
 name = "test_crash_recovery"
