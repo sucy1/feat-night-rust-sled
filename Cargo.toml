@@ -62,7 +62,7 @@ num-format = "0.4.4"
 # rocksdb = "0.21.0"
 # rusqlite = "0.29.0"
 # old_sled = { version = "0.34", package = "sled" }
-rand = "0.9.1"
+rand = "0.10.2"
 quickcheck = "1.0.3"
 rand_distr = "0.5"
 libc = "0.2.147"
